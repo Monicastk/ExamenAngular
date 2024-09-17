@@ -1,0 +1,21 @@
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class=" col-md-12 col-sm-12 col-lg-3" *ngFor = 'let fruit of fruits'>
+            <div class="row border ">
+                <div class=" col-sm-12 col-md-12 col-lg-7 ">
+                    <div class="cards " >
+                        <img [src]="fruit.image" alt="" width="100px">
+                        <div class="cards-body ">
+                            <p> {{fruit.nom}} </p>
+                            <p> {{fruit.prixHT}} €</p>
+                            <p> {{fruit.quantite}} </p>
+                            <a _ngcontent-ng-c1507435856="" class="btn btn-danger m-1">-</a>
+                            <a _ngcontent-ng-c1507435856="" class="btn btn-success">+</a>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-mdb-ripple-init>Ajouter</button>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>     
+</div>
