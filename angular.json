@@ -53,7 +53,7 @@
               "sourceMap": true
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
@@ -89,14 +89,8 @@
             ],
             "scripts": []
           }
-        }
-      }
-    }
-  },
-  "cli": {
-    "analytics": false
-  },
-  "deploy": {
+        },
+        "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
             "ssr": false,
@@ -105,4 +99,10 @@
             "baseHref": "/ExamenAngular/"
           }
         }
+      }
+    }
+  },
+  "cli": {
+    "analytics": false
+  }
 }
